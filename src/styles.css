@@ -25,7 +25,12 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--primary-color);
+  background-image: linear-gradient(rgba(0, 3, 77, 0.8), rgba(0, 2, 44, 0.8)),
+    url('/src/assets/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 15px;
 }
 
@@ -33,10 +38,10 @@ body {
 .register-card {
   width: 100%;
   max-width: 900px;
-  background-color: var(--white);
+  background-color: rgba(255, 255, 255, 0.95);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
 .logo-side {
@@ -1010,7 +1015,7 @@ body {
 /* Login and Register pages footer */
 .login-container .footer,
 .register-container .footer {
-  background-color: #043873;
+  background-color: transparent;
   color: white;
   text-align: center;
   padding: 1rem;

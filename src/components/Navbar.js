@@ -10,9 +10,9 @@ const Navbar = ({ user, onLogout }) => {
   const [showWarnings, setShowWarnings] = useState(false);
   const [showLogoutModal, setShowLogoutModal] = useState(false);
   const [warnings, setWarnings] = useState([
-    "Bin 1 is Almost Full",
-    "Bin 2 is Almost Full",
-    "Bin 1 Malfunctioned"
+    "Biodegradable Bin is Almost Full",
+    "Non-Biodegradable Bin is Almost Full",
+    "Biodegradable Bin Malfunctioned"
   ]);
 
   const handleLogout = () => {

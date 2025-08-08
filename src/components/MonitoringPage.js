@@ -59,22 +59,13 @@ const MonitoringPage = () => {
     return "Select Date Range";
   };
 
-  // Generate random data for the line chart
-  const generateLineData = () => {
-    const data = [];
-    for (let i = 0; i < 15; i++) {
-      data.push(Math.floor(Math.random() * 100) + 20);
-    }
-    return data;
-  };
-
   // Update the lineChartData colors
   const lineChartData = {
-    labels: ['2021', '2022', '2023', '2024', '2025', '2026', '2027'],
+    labels: ['July 1', 'July 2', 'July 3', 'July 4', 'July 5', 'July 6', 'July 7'],
     datasets: [
       {
         label: 'Biodegradable',
-        data: [4.2, 2.6, 3.2, 4.5, 2.6, 4.5, 2.6],
+        data: [4.2, 2.6, 3.2, 4.5, 5.6, 4.5, 8.6],
         borderColor: 'rgb(102, 176, 50)', // Green circle color
         backgroundColor: 'rgb(102, 176, 50)',
         tension: 0.4,
@@ -82,7 +73,7 @@ const MonitoringPage = () => {
       },
       {
         label: 'Non-Biodegradable',
-        data: [2.0, 4.3, 1.8, 3.0, 4.8, 2.8, 1.8],
+        data: [2.0, 4.3, 1.8, 3.0, 4.8, 5.8, 9.8],
         borderColor: 'rgb(255, 192, 0)', // Yellow circle color
         backgroundColor: 'rgb(255, 192, 0)',
         tension: 0.4,
@@ -105,7 +96,7 @@ const MonitoringPage = () => {
     scales: {
       y: {
         beginAtZero: true,
-        max: 6,
+        max: 10,
         ticks: {
           stepSize: 1
         }
