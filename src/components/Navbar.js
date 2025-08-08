@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Dropdown, Modal, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
-import userAvatar from '../assets/user-avatar.png';
+import binLogo from '../assets/bin-logo.png';
 
 const Navbar = ({ user, onLogout }) => {
   const location = useLocation();
@@ -34,7 +34,7 @@ const Navbar = ({ user, onLogout }) => {
       <nav className="navbar navbar-expand navbar-dark">
         <div className="container-fluid">
           <div className="navbar-brand d-flex align-items-center">
-            <img src={userAvatar} alt="User" className="avatar me-2" />
+            <img src={binLogo} alt="Logo" className="avatar me-2" />
             <span>Welcome User!</span>
           </div>
           
