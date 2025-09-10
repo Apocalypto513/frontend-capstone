@@ -30,15 +30,16 @@ ChartJS.register(
   Legend
 );
 
-const WasteCollection = ({ icon, type, amount }) => (
-  <div className="waste-collection-item">
-    <img src={icon} alt={type} className="waste-icon" />
-    <div className="waste-details">
-      <div className="waste-type">{type}</div>
-      <div className="waste-amount">{amount}</div>
-    </div>
-  </div>
-);
+// Commented out unused component to fix build
+// const WasteCollection = ({ icon, type, amount }) => (
+//   <div className="waste-collection-item">
+//     <img src={icon} alt={type} className="waste-icon" />
+//     <div className="waste-details">
+//       <div className="waste-type">{type}</div>
+//       <div className="waste-amount">{amount}</div>
+//     </div>
+//   </div>
+// );
 
 const MonitoringPage = () => {
   const [dateRange, setDateRange] = useState([null, null]);
@@ -109,45 +110,46 @@ const MonitoringPage = () => {
     }
   };
 
-  const TotalWasteCard = () => (
-    <div className="total-waste-card">
-      <h3>Total Waste Collected</h3>
-      <div className="waste-item">
-        <img src={biodegradableIcon} alt="Biodegradable" />
-        <span>Biodegradable:</span>
-        <span className="amount">15</span>
-      </div>
-      <div className="waste-item">
-        <img src={nonBiodegradableIcon} alt="Non-Biodegradable" />
-        <span>Non-Biodegradable:</span>
-        <span className="amount">29</span>
-      </div>
-      <div className="waste-item">
-        <img src={unidentifiedIcon} alt="Unidentified" />
-        <span>Unidentified Waste:</span>
-        <span className="amount">37</span>
-      </div>
-    </div>
-  );
+  // Commented out unused component to fix build
+  // const TotalWasteCard = () => (
+  //   <div className="total-waste-card">
+  //     <h3>Total Waste Collected</h3>
+  //     <div className="waste-item">
+  //       <img src={biodegradableIcon} alt="Biodegradable" />
+  //       <span>Biodegradable:</span>
+  //       <span className="amount">15</span>
+  //     </div>
+  //     <div className="waste-item">
+  //       <img src={nonBiodegradableIcon} alt="Non-Biodegradable" />
+  //       <span>Non-Biodegradable:</span>
+  //       <span className="amount">29</span>
+  //     </div>
+  //     <div className="waste-item">
+  //       <img src={unidentifiedIcon} alt="Unidentified" />
+  //       <span>Unidentified Waste:</span>
+  //       <span className="amount">37</span>
+  //     </div>
+  //   </div>
+  // );
 
-  // Update the Legend component
-  const Legend = () => (
-    <div className="legend-card">
-      <h3>LEGEND</h3>
-      <div className="legend-item">
-        <div className="legend-color" style={{ backgroundColor: 'rgb(102, 176, 50)' }}></div>
-        <span>Biodegradable</span>
-      </div>
-      <div className="legend-item">
-        <div className="legend-color" style={{ backgroundColor: 'rgb(255, 192, 0)' }}></div>
-        <span>Non-Biodegradable</span>
-      </div>
-      <div className="legend-item">
-        <div className="legend-color" style={{ backgroundColor: 'rgb(237, 125, 49)' }}></div>
-        <span>Unidentified Waste</span>
-      </div>
-    </div>
-  );
+  // Commented out unused component to fix build
+  // const Legend = () => (
+  //   <div className="legend-card">
+  //     <h3>LEGEND</h3>
+  //     <div className="legend-item">
+  //       <div className="legend-color" style={{ backgroundColor: 'rgb(102, 176, 50)' }}></div>
+  //       <span>Biodegradable</span>
+  //     </div>
+  //     <div className="legend-item">
+  //       <div className="legend-color" style={{ backgroundColor: 'rgb(255, 192, 0)' }}></div>
+  //       <span>Non-Biodegradable</span>
+  //     </div>
+  //     <div className="legend-item">
+  //       <div className="legend-color" style={{ backgroundColor: 'rgb(237, 125, 49)' }}></div>
+  //       <span>Unidentified Waste</span>
+  //     </div>
+  //   </div>
+  // );
 
   return (
     <div className="monitoring-page">

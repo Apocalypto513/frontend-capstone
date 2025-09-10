@@ -1,8 +1,18 @@
-# Getting Started with Create React App
+# LNU Waste Monitoring System
 
+This is a comprehensive waste monitoring system consisting of a React frontend dashboard and ESP32 camera hardware for object detection.
+
+## System Components
+
+### Frontend Dashboard (React App)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### ESP32 Camera Module
+Located in `/esp32-camera/` - An ESP32-CAM based object detection system with I2C LCD display support.
+
+## Frontend Dashboard Setup
+
+### Available Scripts
 
 In the project directory, you can run:
 
@@ -68,3 +78,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## ESP32 Camera Hardware Setup
+
+The ESP32 camera module provides object detection capabilities with I2C LCD display support. See the `/esp32-camera/` directory for:
+
+- **Arduino Code**: Complete ESP32-CAM sketch with object detection and LCD display
+- **Setup Instructions**: Hardware wiring, library requirements, and configuration
+- **Documentation**: Detailed README with troubleshooting and future enhancement ideas
+
+### Key Features
+- Object detection with confidence-based filtering (≥90% threshold)
+- I2C LCD display for high-confidence detections
+- Serial monitor output for debugging
+- Compatible with standard ESP32-CAM modules
+- Ready for ML model integration (TensorFlow Lite, Edge Impulse)
+
+### Quick Start
+1. Navigate to `/esp32-camera/` directory
+2. Follow the README.md for hardware setup and wiring
+3. Install required Arduino libraries
+4. Upload the sketch to your ESP32-CAM module
+5. Connect I2C LCD display as per wiring diagram
+
+For detailed instructions, see [esp32-camera/README.md](esp32-camera/README.md)
